@@ -1,0 +1,27 @@
+{
+    "content_scripts": [ {
+        "exclude_globs": [ 
+        	"http://*xunlei*"
+        ],
+        "exclude_matches": [  ],
+        "include_globs": ["http://code.jquery.com/jquery.min.js"],
+        "js": [ "script.js" ],
+		"browser_action":{ 
+			"default_icon":"favicon.ico", 
+			"default_popup":"popup.html" 
+        },
+        "matches": [
+            "http://*.t66y.com/*",
+            "http://cl.eye.rs/*",
+            "http://cl.orc.st/*",
+            "http://184.154.128.243/*",
+            "http://*.shenyingwang.com/*"
+        ],
+        "run_at": "document_idle"
+    } ],
+    "converted_from_user_script": true,
+    "name": "Chrome.Caoliu.plug",
+    "version": "1.0",
+    "manifest_version": 2,
+    "description": "This extention for Caoliu!"
+}
